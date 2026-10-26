@@ -1,0 +1,27 @@
+import Booktear from '@/components/ui/Booktear';
+
+export function Loveletter({ className }) {
+  return (
+    <div className={`relative ${className || ''}`}>
+      <Booktear className="relative z-10" /> 
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-50"
+        style={{ backgroundImage: 'url(/images/paper.jpg)' }}
+      />
+    <div className="relative bg-transparent">
+      <div className="px-6 py-24 sm:py-32 lg:px-8">
+        <div className="mx-auto max-w-2xl text-left">
+                  <p className="font-script text-2xl text-love-red mb-2 font-typewriter">Mon cher,</p>
+                           <p className="font-typewriter text-xl max-w-2xl mx-auto leading-relaxed">
+           If you find yourself here, you’ve survived the noise.<br />
+           Sit, let the glass sweat a little.<br />
+           The band will start soon, and perhaps someone will meet your eyes before the chorus ends.<br />
+           If not, the night still owes you a dance.
+         </p>
+                  <p className="font-script text-xl text-love-red mt-6 font-typewriter">— M.N.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  )
+}

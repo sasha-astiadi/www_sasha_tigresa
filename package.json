@@ -1,0 +1,49 @@
+{
+  "name": "tailwindui-salient",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "gh-pages -d out"
+  },
+  "browserslist": "defaults, not ie <= 11",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@headlessui/react": "^2.1.2",
+    "@headlessui/tailwindcss": "^0.2.0",
+    "@heroicons/react": "^2.1.5",
+    "@kevtucker/react-audio-player-bar": "^0.0.2",
+    "@mui/material": "^7.3.1",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.13",
+    "autoprefixer": "^10.4.19",
+    "clsx": "^2.1.0",
+    "framer-motion": "^11.18.2",
+    "next": "^14.0.4",
+    "postcss": "^8.4.39",
+    "react": "^18.2.0",
+    "react-audio-player": "^0.17.0",
+    "react-card-slider-component": "^1.0.9",
+    "react-dom": "^18.2.0",
+    "react-slick": "^0.30.2",
+    "react-use-measure": "^2.1.7",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.7",
+    "tailwindcss": "^3.4.6",
+    "typewriter-effect": "^2.22.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.0.4",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^6.3.0",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "sharp": "0.33.1"
+  }
+}
