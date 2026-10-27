@@ -65,12 +65,13 @@ function MobileNavigation() {
       />
       <PopoverPanel
         transition
-        className="absolute inset-x-0 top-full flex origin-top flex-col bg-black/10 p-4 text-lg tracking-tight text-white backdrop-blur-sm data-[closed]:scale-95 data-[closed]:opacity-0 data-[enter]:duration-150 data-[leave]:duration-100 data-[enter]:ease-out data-[leave]:ease-in"
+        className="absolute inset-x-0 bottom-full flex origin-bottom flex-col bg-black/10 p-4 text-lg tracking-tight text-white backdrop-blur-sm data-[closed]:scale-95 data-[closed]:opacity-0 data-[enter]:duration-150 data-[leave]:duration-100 data-[enter]:ease-out data-[leave]:ease-in"
       >
-        <MobileNavLink href="/">MENUS</MobileNavLink>
-        <MobileNavLink href="/story">STORY</MobileNavLink>
-        <MobileNavLink href="/experiences">EVENTS</MobileNavLink>
-        <MobileNavLink href="/dahabiyas">CONTACT</MobileNavLink>
+        <MobileNavLink href="/">HOME</MobileNavLink>
+        <MobileNavLink href="/about">ABOUT</MobileNavLink>
+        <MobileNavLink href="/music">MUSIC</MobileNavLink>
+        <MobileNavLink href="/videos">VIDEOS</MobileNavLink>
+        <MobileNavLink href="/contact">CONTACT</MobileNavLink>
       </PopoverPanel>
     </Popover>
   )
@@ -78,21 +79,20 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/10 backdrop-blur-sm py-3">
+    <header className="fixed bottom-0 left-0 right-0 z-50 bg-black/10 backdrop-blur-sm py-4 md:py-3">
       <Container>
-        <nav className="relative z-50 flex items-center justify-between md:justify-center">
+        <nav className="relative z-50 flex items-center justify-between">
           <div className="flex flex-1 items-center md:hidden">
             <Link href="/" aria-label="Home">
               <Image src="/images/logomark.svg" alt="" width="32" height="32" className="h-8 w-auto" unoptimized />
             </Link>
           </div> 
-          <div className="flex items-center gap-x-5 md:gap-x-8">
-            <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="/">MENUS</NavLink>
-              <NavLink href="/story">STORY</NavLink>
-              <NavLink href="/experiences">EVENTS</NavLink>
-              <NavLink href="/dahabiyas">CONTACT</NavLink>
-            </div>
+          <div className="hidden md:flex flex-1 items-center justify-between">
+            <NavLink href="/">HOME</NavLink>
+            <NavLink href="/about">ABOUT</NavLink>
+            <NavLink href="/music">MUSIC</NavLink>
+            <NavLink href="/videos">VIDEOS</NavLink>
+            <NavLink href="/contact">CONTACT</NavLink>
           </div>
           <div className="md:hidden">
             <MobileNavigation />

@@ -1,13 +1,14 @@
-import { Inter, Lexend } from 'next/font/google'
+import { Anton, Inter, Lexend } from 'next/font/google'
 import localFont from 'next/font/local'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
+import BgNoise from '@/components/BgNoise'
 
 export const metadata = {
   title: {
     template: '%s - MN',
-    default: 'Maison Noire',
+    default: 'Sasha Tigresa',
   },
   description:
     'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
@@ -30,6 +31,13 @@ const lexend = Lexend({
   variable: '--font-lexend',
 })
 
+const anton = Anton({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-anton',
+})
+
 export default function RootLayout({ children }) {
   return (
     <html
@@ -39,9 +47,11 @@ export default function RootLayout({ children }) {
         inter.variable,
         lexend.variable,
         jmhTypewriter.variable,
+        anton.variable,
       )}
     >
-                  <body className="flex h-full flex-col bg-black pt-20 text-slate-900">
+                  <body className="flex h-full flex-col bg-black pt-20 pb-20 text-slate-900">
+        <BgNoise />
         {children}
               </body>
     </html>

@@ -30,6 +30,7 @@ module.exports = {
         sans: ['Montserrat', 'sans-serif'],
         display: ['Montserrat', 'sans-serif'],
         typewriter: 'var(--font-jmh-typewriter)',
+        anton: 'var(--font-anton)',
       },
       maxWidth: {
         '2xl': '40rem',
