@@ -1,27 +1,27 @@
 import Link from 'next/link'
 
-import { Button } from '@/components/Button'
-import { Logo } from '@/components/Logo'
-import { SlimLayout } from '@/components/SlimLayout'
+import { Header } from '@/components/Header'
 
 export default function NotFound() {
   return (
-    <SlimLayout>
-      <div className="flex">
-        <Link href="/" aria-label="Home">
-          <Logo className="h-10 w-auto" />
-        </Link>
-      </div>
-      <p className="mt-20 text-sm font-medium text-gray-700">404</p>
-      <h1 className="mt-3 text-lg font-semibold text-gray-800">
-        Page not found
-      </h1>
-      <p className="mt-3 text-sm text-gray-700">
-        Sorry, we couldn’t find the page you’re looking for.
-      </p>
-      <Button href="/" className="mt-10">
-        Go back home
-      </Button>
-    </SlimLayout>
+    <>
+      <Header />
+      <main className="flex min-h-[calc(100vh-10rem)] items-center justify-center bg-black px-8 text-center">
+        <div>
+          <h1 className="font-anton uppercase leading-none text-red-600/90 text-[28vw] md:text-[12rem]">
+            404
+          </h1>
+          <p className="mt-6 text-lg text-gray-200">
+            Sorry, we couldn’t find the page you’re looking for.
+          </p>
+          <Link
+            href="/"
+            className="mt-10 inline-block text-lg font-semibold uppercase tracking-[0.25em] text-red-600/90 hover:text-red-500"
+          >
+            Go back home
+          </Link>
+        </div>
+      </main>
+    </>
   )
 }
