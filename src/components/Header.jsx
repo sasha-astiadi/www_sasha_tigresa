@@ -70,7 +70,7 @@ function MobileNavigation() {
         <MobileNavLink href="/">HOME</MobileNavLink>
         <MobileNavLink href="/about">ABOUT</MobileNavLink>
         <MobileNavLink href="/music">MUSIC</MobileNavLink>
-        <MobileNavLink href="/videos">VIDEOS</MobileNavLink>
+        <MobileNavLink href="/vides">DJ SETS</MobileNavLink>
         <MobileNavLink href="/contact">CONTACT</MobileNavLink>
       </PopoverPanel>
     </Popover>
@@ -91,7 +91,7 @@ export function Header() {
             <NavLink href="/">HOME</NavLink>
             <NavLink href="/about">ABOUT</NavLink>
             <NavLink href="/music">MUSIC</NavLink>
-            <NavLink href="/videos">VIDEOS</NavLink>
+            <NavLink href="/videos">DJ SETS</NavLink>
             <NavLink href="/contact">CONTACT</NavLink>
           </div>
           <div className="md:hidden">
