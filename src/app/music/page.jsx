@@ -10,17 +10,17 @@ const releases = [
   {
     src: '/images/music/blue-jeans.jpg',
     title: 'Blue Jeans',
-    href: 'https://hypeddit.com/jjpu9g',
+    href: 'https://hypeddit.com/b4979n',
   },
   {
     src: '/images/music/feel.webp',
-    title: 'Feel (Abra Remix)',
+    title: 'Feel (&ME Remix, Sasha Tigresa Edit)',
     href: 'https://hypeddit.com/wvj24x',
   },
   {
     src: '/images/music/mano-mano.jpg',
     title: 'Mano Mano',
-    href: 'https://hypeddit.com/b4979n',
+    href: 'https://hypeddit.com/jjpu9g',
   },
 ]
 
