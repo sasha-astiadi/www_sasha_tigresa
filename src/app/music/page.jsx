@@ -9,7 +9,7 @@ export const metadata = {
 const releases = [
   {
     src: '/images/music/blue-jeans.jpg',
-    title: 'Blue Jeans',
+    title: 'Blue Jeans (Sasha Tigresa Remix)',
     href: 'https://hypeddit.com/b4979n',
   },
   {
@@ -19,7 +19,7 @@ const releases = [
   },
   {
     src: '/images/music/mano-mano.jpg',
-    title: 'Mano Mano',
+    title: 'Mano Mano (Sasha Tigresa Remix)',
     href: 'https://hypeddit.com/jjpu9g',
   },
 ]
