@@ -42,7 +42,7 @@ export default function Music() {
                 rel="noopener noreferrer"
                 className="group block"
               >
-                <div className="relative aspect-square overflow-hidden">
+                <div className="relative aspect-w-1 aspect-h-1 overflow-hidden">
                   <Image
                     src={release.src}
                     alt={release.title}
