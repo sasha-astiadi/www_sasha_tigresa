@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { Header } from '@/components/Header'
+import FadeIn from '@/components/FadeIn'
 
 export const metadata = {
   title: 'Music',
@@ -34,7 +35,7 @@ export default function Music() {
     <>
       <Header />
       <main className="bg-black">
-        <section className="px-8 py-10 lg:px-16 lg:py-16">
+        <FadeIn className="px-8 pt-2 pb-10 lg:px-16 lg:pt-4 lg:pb-16">
           <h1 className="font-anton uppercase leading-none text-red-600/90 text-6xl md:text-7xl mb-10">
             Music
           </h1>
@@ -53,28 +54,28 @@ export default function Music() {
                       href={release.listen}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm font-semibold uppercase tracking-[0.25em] text-white hover:text-red-500"
+                      className="text-sm font-semibold uppercase tracking-[0.25em] text-red-600/90 transition-colors duration-300 hover:text-red-500"
                     >
                       Listen
                     </a>
-                    <span className="text-sm text-white">/</span>
+                    <span className="text-sm text-red-600/90">/</span>
                     <a
                       href={release.download}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm font-semibold uppercase tracking-[0.25em] text-white hover:text-red-500"
+                      className="text-sm font-semibold uppercase tracking-[0.25em] text-red-600/90 transition-colors duration-300 hover:text-red-500"
                     >
                       Download
                     </a>
                   </div>
                 </div>
-                <p className="mt-3 text-sm font-semibold uppercase tracking-[0.25em] text-gray-200 group-hover:text-red-600/90">
+                <p className="mt-3 text-sm font-semibold uppercase tracking-[0.25em] text-red-600/90 transition-colors duration-300 group-hover:text-red-500">
                   {release.title}
                 </p>
               </div>
             ))}
           </div>
-        </section>
+        </FadeIn>
       </main>
     </>
   )

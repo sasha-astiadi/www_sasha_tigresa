@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { Header } from '@/components/Header'
+import FadeIn from '@/components/FadeIn'
 
 export const metadata = {
   title: 'DJ Sets',
@@ -26,7 +27,7 @@ export default function Videos() {
     <>
       <Header />
       <main className="bg-black">
-        <section className="px-8 py-10 lg:px-16 lg:py-16">
+        <FadeIn className="px-8 pt-2 pb-10 lg:px-16 lg:pt-4 lg:pb-16">
           <h1 className="font-anton uppercase leading-none text-red-600/90 text-6xl md:text-7xl mb-10">
             DJ Sets
           </h1>
@@ -47,7 +48,7 @@ export default function Videos() {
                     className="object-cover transition duration-500 group-hover:scale-105"
                   />
                 </div>
-                <p className="mt-3 text-sm font-semibold uppercase tracking-[0.25em] text-gray-200 group-hover:text-red-600/90">
+                <p className="mt-3 text-sm font-semibold uppercase tracking-[0.25em] text-red-600/90 transition-colors duration-300 group-hover:text-red-500">
                   {video.title}
                 </p>
                 <p className="mt-1 text-xs uppercase tracking-[0.25em] text-gray-500">
@@ -56,7 +57,7 @@ export default function Videos() {
               </a>
             ))}
           </div>
-        </section>
+        </FadeIn>
       </main>
     </>
   )

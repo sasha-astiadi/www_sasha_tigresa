@@ -58,7 +58,7 @@ export function Hero() {
         </div>
       </Container>
       </div>
-      <div className="relative hidden md:block">
+      {/* <div className="relative hidden md:block">
         <Image
           unoptimized
           src="/images/booktear1.png"
@@ -67,7 +67,7 @@ export function Hero() {
           height={200}
           className="relative z-10 -mt-14 w-full h-auto"
         />
-      </div>
+      </div> */}
       <div className="relative">
         <div
           className="bg-cover bg-center lg:-mt-14 mt-0"

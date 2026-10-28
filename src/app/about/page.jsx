@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { Header } from '@/components/Header'
+import FadeIn from '@/components/FadeIn'
 
 export const metadata = {
   title: 'About',
@@ -11,7 +12,7 @@ export default function About() {
     <>
       <Header />
       <main className="bg-black">
-        <section className="grid -mt-20 md:mt-0 md:fixed md:inset-0 md:grid-cols-2">
+        <FadeIn className="grid -mt-20 md:mt-0 md:fixed md:inset-0 md:grid-cols-2">
           <div className="relative h-[60vh] md:h-full">
             <Image
               src="/images/about/sasha_tigresa.JPG"
@@ -25,7 +26,7 @@ export default function About() {
             <h1 className="font-anton uppercase leading-none text-red-600/90 text-6xl md:text-7xl mb-10">
               About
             </h1>
-            <div className="flex-1 min-h-0 overflow-y-auto pr-4 space-y-6 text-lg leading-relaxed text-gray-200">
+            <div className="flex-1 min-h-0 overflow-y-auto pr-4 space-y-6 text-base uppercase tracking-wider leading-relaxed text-gray-300">
               <p>
                 Sasha Tigresa is an Indonesian-German DJ and electronic music
                 producer whose sound lives at the intersection of rhythm,
@@ -54,8 +55,7 @@ export default function About() {
                 brands and promoters, including Pacha, Nike, SLS, and Culture
                 of House, while attracting the attention and support of
                 artists across the afro house and tribal melodic electronic
-                music spectrum, including Pablo Fierro, Floyd Lavine,
-                Everything Is Art, Thee Suka, Idd Aziz, Rancido, Collé, and
+                music spectrum, including Pablo Fierro, Floyd Lavine,                 Thee Suka, Idd Aziz, Rancido, Collé, and
                 many others.
               </p>
               <p>
@@ -70,7 +70,7 @@ export default function About() {
               </p>
             </div>
           </div>
-        </section>
+        </FadeIn>
       </main>
     </>
   )

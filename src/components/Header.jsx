@@ -17,7 +17,7 @@ import { NavLink } from '@/components/NavLink'
 
 function MobileNavLink({ href, children }) {
   return (
-    <PopoverButton as={Link} href={href} className="block w-full p-2">
+    <PopoverButton as={Link} href={href} className="block w-full p-2 font-semibold uppercase tracking-[0.15em] text-red-600/90 transition-colors duration-300 hover:text-red-500">
       {children}
     </PopoverButton>
   )

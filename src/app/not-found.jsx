@@ -1,13 +1,14 @@
 import Link from 'next/link'
 
 import { Header } from '@/components/Header'
+import FadeIn from '@/components/FadeIn'
 
 export default function NotFound() {
   return (
     <>
       <Header />
       <main className="flex min-h-[calc(100vh-10rem)] items-center justify-center bg-black px-8 text-center">
-        <div>
+        <FadeIn>
           <h1 className="font-anton uppercase leading-none text-red-600/90 text-[28vw] md:text-[12rem]">
             404
           </h1>
@@ -16,11 +17,11 @@ export default function NotFound() {
           </p>
           <Link
             href="/"
-            className="mt-10 inline-block text-lg font-semibold uppercase tracking-[0.25em] text-red-600/90 hover:text-red-500"
+            className="mt-10 inline-block text-lg font-semibold uppercase tracking-[0.25em] text-red-600/90 transition-colors duration-300 hover:text-red-500"
           >
             Go back home
           </Link>
-        </div>
+        </FadeIn>
       </main>
     </>
   )
