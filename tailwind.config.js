@@ -29,7 +29,6 @@ module.exports = {
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
         display: ['Montserrat', 'sans-serif'],
-        typewriter: 'var(--font-jmh-typewriter)',
         anton: 'var(--font-anton)',
       },
       maxWidth: {

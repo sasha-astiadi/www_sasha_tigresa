@@ -1,5 +1,4 @@
-import { Anton, Inter, Lexend } from 'next/font/google'
-import localFont from 'next/font/local'
+import { Anton } from 'next/font/google'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
@@ -75,23 +74,6 @@ const jsonLd = {
   ],
 }
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-})
-
-const jmhTypewriter = localFont({
-  src: '../fonts/jmh_typewriter/JMH Typewriter.otf',
-  variable: '--font-jmh-typewriter',
-})
-
-const lexend = Lexend({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-lexend',
-})
-
 const anton = Anton({
   weight: '400',
   subsets: ['latin'],
@@ -105,9 +87,6 @@ export default function RootLayout({ children }) {
       lang="en"
       className={clsx(
         'h-full scroll-smooth antialiased',
-        inter.variable,
-        lexend.variable,
-        jmhTypewriter.variable,
         anton.variable,
       )}
     >

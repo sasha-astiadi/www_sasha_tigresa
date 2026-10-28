@@ -66,13 +66,6 @@ export function Hero() {
           className="relative z-10 -mt-14 w-full h-auto"
         />
       </div> */}
-      <div className="relative">
-        <div
-          className="bg-cover bg-center lg:-mt-14 mt-0"
-          style={{ backgroundImage: 'url(/images/paper.jpg)', opacity: '0.9' }}
-        >
-        </div>
-      </div>
     </>
   )
 }
