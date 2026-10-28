@@ -64,7 +64,7 @@ function MobileNavigation() {
       />
       <PopoverPanel
         transition
-        className="absolute inset-x-0 bottom-full flex origin-bottom flex-col bg-black/10 p-4 text-lg tracking-tight text-white backdrop-blur-sm data-[closed]:scale-95 data-[closed]:opacity-0 data-[enter]:duration-150 data-[leave]:duration-100 data-[enter]:ease-out data-[leave]:ease-in"
+        className="absolute inset-x-0 bottom-full -mx-4 sm:-mx-6 lg:-mx-8 flex origin-bottom flex-col bg-black/10 p-4 text-lg tracking-tight text-white backdrop-blur-sm data-[closed]:scale-95 data-[closed]:opacity-0 data-[enter]:duration-150 data-[leave]:duration-100 data-[enter]:ease-out data-[leave]:ease-in"
       >
         <MobileNavLink href="/">HOME</MobileNavLink>
         <MobileNavLink href="/about">ABOUT</MobileNavLink>
