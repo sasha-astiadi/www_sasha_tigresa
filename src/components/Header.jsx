@@ -70,7 +70,7 @@ function MobileNavigation() {
         <MobileNavLink href="/">HOME</MobileNavLink>
         <MobileNavLink href="/about">ABOUT</MobileNavLink>
         <MobileNavLink href="/music">MUSIC</MobileNavLink>
-        <MobileNavLink href="/vides">DJ SETS</MobileNavLink>
+        <MobileNavLink href="/videos">DJ SETS</MobileNavLink>
         <MobileNavLink href="/contact">CONTACT</MobileNavLink>
       </PopoverPanel>
     </Popover>
