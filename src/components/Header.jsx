@@ -9,7 +9,6 @@ import {
 } from '@headlessui/react'
 import clsx from 'clsx'
 
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import Image from 'next/image'
 

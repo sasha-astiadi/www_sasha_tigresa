@@ -1,35 +1,49 @@
-# Salient
+# Sasha Tigresa — Official Website
 
-Salient is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+The official website of **Sasha Tigresa**, Indonesian-German DJ and electronic
+music producer — Afro House, melodic and percussive electronic music.
 
-## Getting started
+Built with **Next.js 14** (App Router, static export), **Tailwind CSS**,
+**Framer Motion** and `next/font` (Anton). Deployed as a static site to
+GitHub Pages.
 
-To get started with this template, first install the npm dependencies:
+## Development
 
 ```bash
 npm install
+npm run dev      # http://localhost:3000
 ```
 
-Next, run the development server:
+## Build & Deploy
 
 ```bash
-npm run dev
+npm run build    # static export → out/
+npm run deploy   # publishes out/ via gh-pages
 ```
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+## Pages
 
-## Customizing
+| Route      | Content                                          |
+| ---------- | ------------------------------------------------ |
+| `/`        | Hero — full-screen photo, Anton title, film grain|
+| `/about`   | Two-column bio with scrollable text              |
+| `/music`   | Release covers with Listen / Download hover links|
+| `/videos`  | DJ Sets — YouTube set thumbnails                 |
+| `/contact` | Social links, booking mailto, presskit download  |
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+## Brand
 
-## License
+- Accent red: `text-red-600/90`, hover `text-red-500`
+- Display font: Anton (`--font-anton`, utility `font-anton`)
+- Global film-grain overlay: `src/components/BgNoise.jsx` (in root layout,
+  `z-30`, `pointer-events-none`)
+- Bottom fixed nav: `src/components/Header.jsx`
 
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
+## Media conventions
 
-## Learn more
-
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
+- Images live under `public/images/<page>/`
+- Video thumbnails for `/videos` come from
+  `https://i.ytimg.com/vi/{id}/maxresdefault.jpg`
+- Aspect ratios use the `@tailwindcss/aspect-ratio` plugin syntax
+  (`aspect-w-16 aspect-h-9`) — core `aspect-square`/`aspect-video` classes
+  do not exist in this config.

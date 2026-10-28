@@ -2,9 +2,7 @@
 
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
-import Typewriter from 'typewriter-effect'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 
 
